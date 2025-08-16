@@ -1,14 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rogue Horizons</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manga Collection</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #333;
+      color: #fff;
+      padding: 15px;
+      text-align: center;
+    }
+    .manga-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .manga-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .manga-card:hover {
+      transform: scale(1.05);
+    }
+    .manga-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .manga-card h3 {
+      margin: 10px;
+      text-align: center;
+    }
+    .manga-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
 </head>
-<body style="text-align:center; background-color:#f0f0f0;">
-    <h1>Rogue Horizons</h1>
-    <a href="chapter1.html">
-        <img src="Rogue Horizons (1).png" alt="Rogue Horizons Cover" style="max-width:90%; height:auto;">
-    </a>
+<body>
+  <header>
+    <h1>Manga Collection</h1>
+  </header>
+
+  <div class="manga-container">
+    <!-- Rogue Horizons Manga -->
+    <div class="manga-card">
+      <a href="chapter1.html">
+        <img src="rikuya-rolls-in.png" alt="Rogue Horizons Chapter 1 Cover">
+        <h3>Rogue Horizons</h3>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
